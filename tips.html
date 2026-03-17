@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Tips ⚽ YMCA Strikers</title>
+  <meta name="description" content="Quick, kid-friendly soccer skill tips for dribbling, passing, shooting, and defending." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="./index.html" class="nav-logo">⚽ YMCA Strikers</a>
+      <ul class="nav-links" role="list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./drills.html">Drills</a></li>
+        <li><a href="./tips.html">Tips</a></li>
+        <li><a href="./week.html">This Week</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+      <a href="./index.html">Home</a>
+      <a href="./drills.html">Drills</a>
+      <a href="./tips.html">Tips</a>
+      <a href="./week.html">This Week</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" role="banner">
+    <div class="container">
+      <h1>Skill Tips 💡</h1>
+      <p>Quick tips written for young players — pick a category and level up your game!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-label="Skill tips">
+      <div class="container">
+
+        <!-- CATEGORY TABS -->
+        <div class="tab-bar" role="tablist" aria-label="Skill tip categories">
+          <button class="tab-btn active" data-tab="tips-dribbling" role="tab" aria-selected="true" aria-controls="tips-dribbling">⚽ Dribbling</button>
+          <button class="tab-btn" data-tab="tips-passing" role="tab" aria-selected="false" aria-controls="tips-passing">🎯 Passing</button>
+          <button class="tab-btn" data-tab="tips-shooting" role="tab" aria-selected="false" aria-controls="tips-shooting">🥅 Shooting</button>
+          <button class="tab-btn" data-tab="tips-defense" role="tab" aria-selected="false" aria-controls="tips-defense">🛡️ Defense</button>
+        </div>
+
+        <!-- ════════════════════════════════════════
+             DRIBBLING TIPS
+        ════════════════════════════════════════ -->
+        <div id="tips-dribbling" class="tip-section" role="tabpanel" aria-labelledby="tab-dribbling">
+
+          <article class="tip-card">
+            <span class="tip-icon">👀</span>
+            <h3>Always look up when you dribble!</h3>
+            <p>When you stare at the ball, you can't see your teammates, the defenders, or where you're going. Practice dribbling while looking forward — it's tricky at first, but you'll get it!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-d1">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-d1">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Try a fun challenge at home: call out a number on your fingers while your child dribbles — they have to tell you the number without stopping!</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🦶</span>
+            <h3>Use both feet — not just your favorite one!</h3>
+            <p>Every great dribbler uses both feet. Your weaker foot might feel weird at first, but the more you practice with it, the stronger it gets. Try dribbling only with your weaker foot for one whole minute today!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-d2">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-d2">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Gently encourage your child to use their weaker foot in practice. Avoid correcting too often — let them discover it themselves with positive encouragement.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🐱</span>
+            <h3>Keep the ball close — like a cat with a toy!</h3>
+            <p>When you dribble, the ball should never be more than one step away from your foot. Big, heavy touches let defenders steal it easily. Small, quick touches keep you in control!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-d3">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-d3">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Watch for the distance between the ball and your child's feet during dribbling drills. If the ball is rolling far ahead, remind them: "small touches, keep it close!"</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">💨</span>
+            <h3>Change speed to beat defenders!</h3>
+            <p>Dribbling fast all the time is easy to defend. The secret is to slow down, then suddenly burst past the defender at full speed. That change of pace is what throws them off balance!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-d4">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-d4">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Encourage your child to practice "slow-slow-FAST" dribbling in the backyard. It's one of the most effective moves in youth soccer and can be practiced anywhere!</p>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /tips-dribbling -->
+
+        <!-- ════════════════════════════════════════
+             PASSING TIPS
+        ════════════════════════════════════════ -->
+        <div id="tips-passing" class="tip-section hidden" role="tabpanel" aria-labelledby="tab-passing">
+
+          <article class="tip-card">
+            <span class="tip-icon">🦵</span>
+            <h3>Use the inside of your foot for accurate passes!</h3>
+            <p>The inside of your foot is like a flat paddle — it gives you the most control and accuracy. Point your toes out, plant your standing foot next to the ball, and push through it smoothly.</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-p1">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-p1">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Look for your child's standing foot position — it should be planted beside the ball, not behind it. This is the foundation of a clean pass.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">📡</span>
+            <h3>Pass to where your teammate is GOING, not where they ARE!</h3>
+            <p>If your teammate is running, don't pass to their feet — pass to the space in front of them so they can run onto it. That's called a "through ball" and it's super powerful!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-p2">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-p2">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>This is a concept that takes time to develop. Praise your child when they attempt a forward pass — even if it doesn't work perfectly, the intent is what matters at this age.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🗣️</span>
+            <h3>Call for the ball — your voice is a superpower!</h3>
+            <p>When you're open and want the ball, shout "yes!" or your teammate's name. Communicating helps your team make faster decisions and keeps everyone connected. Don't be shy — be loud!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-p3">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-p3">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Encourage your child to be vocal on the field. Shy players often have great skills but don't get the ball — calling for it is a habit that changes everything.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🎯</span>
+            <h3>Look before you receive the ball!</h3>
+            <p>Before the ball reaches you, take a quick look around to see where your teammates and defenders are. That way, when you get the ball, you already know what to do next — no hesitation!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-p4">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-p4">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Ask your child after practice: "Did you look around before you got the ball?" It's a habit that separates good players from great ones — even at the youth level.</p>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /tips-passing -->
+
+        <!-- ════════════════════════════════════════
+             SHOOTING TIPS
+        ════════════════════════════════════════ -->
+        <div id="tips-shooting" class="tip-section hidden" role="tabpanel" aria-labelledby="tab-shooting">
+
+          <article class="tip-card">
+            <span class="tip-icon">🔒</span>
+            <h3>Lock your ankle for a powerful shot!</h3>
+            <p>When you shoot, your ankle should be stiff and locked — not floppy. A locked ankle transfers all your power into the ball. Point your toes down and squeeze your ankle tight before you kick!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-s1">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-s1">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Watch your child's ankle at the moment of contact. If it looks floppy, remind them to "lock it" — this is the single most impactful technique fix for young shooters.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🏹</span>
+            <h3>Aim for the corners of the goal!</h3>
+            <p>Shooting down the middle is easy for the goalkeeper to save. Aim for the bottom corners — that's the hardest spot for any keeper to reach! Pick your spot before you shoot.</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-s2">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-s2">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Encourage your child to call out "left corner" or "right corner" before shooting in practice. This builds the habit of picking a target rather than just blasting the ball.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">⬆️</span>
+            <h3>Lean over the ball to keep your shot low!</h3>
+            <p>If you lean back when you shoot, the ball goes flying over the bar. Lean your body forward over the ball as you kick, and it will stay low and on target. Low shots are harder to save!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-s3">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-s3">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>If your child's shots keep going high, check their body lean. Leaning back is the most common cause of high shots at this age — a simple cue is "nose over the ball."</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🌟</span>
+            <h3>Follow through all the way to score big!</h3>
+            <p>After your foot hits the ball, keep swinging your leg forward — all the way through. Stopping your kick early reduces power and accuracy. Finish the kick like you're trying to kick through the ball!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-s4">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-s4">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>A full follow-through is a sign of good shooting technique. Praise your child when their leg swings all the way through — it means they're committing to the shot!</p>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /tips-shooting -->
+
+        <!-- ════════════════════════════════════════
+             DEFENSE TIPS
+        ════════════════════════════════════════ -->
+        <div id="tips-defense" class="tip-section hidden" role="tabpanel" aria-labelledby="tab-defense">
+
+          <article class="tip-card">
+            <span class="tip-icon">🧘</span>
+            <h3>Stay patient — don't dive in!</h3>
+            <p>When you rush at the attacker and dive for the ball, they can easily step around you. Instead, slow down, get in their path, and wait for them to make a mistake. Patience is your best weapon!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-def1">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-def1">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Patience in defense is a mature concept for 9–10 year olds. Praise your child when they slow down and stay in front of the attacker — even if they don't win the ball.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🏃</span>
+            <h3>Stay between the attacker and your goal!</h3>
+            <p>Your job as a defender is to stay "goal-side" — always between the attacker and the goal you're protecting. If you let the attacker get behind you, they have a clear path to score!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-def2">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-def2">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Ask your child: "Where should you stand when you're defending?" The answer is "between the attacker and our goal." Reinforce this concept — it's the foundation of all defending.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🏋️</span>
+            <h3>Bend your knees and stay on your toes!</h3>
+            <p>A good defensive stance means bent knees, weight on the balls of your feet, and arms out for balance. This ready position lets you move quickly in any direction. Never stand flat-footed!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-def3">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-def3">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>The defensive stance is a physical habit that takes repetition. Encourage your child to practice the "ready position" at home — knees bent, weight forward, arms out.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="tip-card">
+            <span class="tip-icon">🔄</span>
+            <h3>Defend as a team — talk to each other!</h3>
+            <p>Great defenders communicate with their teammates. Call out "I've got them!" when you're marking someone, or "help!" when you need backup. Defense is a team effort — not just one person's job!</p>
+            <button class="parent-toggle" aria-expanded="false" aria-controls="pn-def4">
+              <span class="pn-label">Parent Note ▼</span>
+            </button>
+            <div class="parent-note-panel" id="pn-def4">
+              <div class="callout callout-blue" style="margin-top:0.5rem;">
+                <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                <p>Encourage your child to be a vocal defender. Calling out "I've got them!" is a sign of soccer intelligence — praise it every time you hear it from the sideline.</p>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /tips-defense -->
+
+        <!-- BOTTOM CTA -->
+        <div class="cta-banner" style="margin-top:3rem;">
+          <h2>Want more tips? 💬</h2>
+          <p>The Soccer Practice Coach GPT has hundreds of tips for every skill level — ask away!</p>
+          <a href="https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Get More Tips from the Coach →
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p style="font-size:1.5rem; margin-bottom:0.5rem;">⚽</p>
+      <p style="font-weight:700; color:#e2e8f0; margin-bottom:0.25rem;">YMCA Strikers — Youth Soccer</p>
+      <p style="margin-bottom:0.5rem;">2025–2026 Season &nbsp;|&nbsp; Ages 9–10</p>
+      <p>Drill content powered by the <a href="https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach" target="_blank" rel="noopener noreferrer">Soccer Practice Coach GPT</a></p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drills Library ⚽ YMCA Strikers</title>
+  <meta name="description" content="Browse 12 youth soccer drills across 6 categories. Filter by skill and expand for full instructions." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="./index.html" class="nav-logo">⚽ YMCA Strikers</a>
+      <ul class="nav-links" role="list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./drills.html">Drills</a></li>
+        <li><a href="./tips.html">Tips</a></li>
+        <li><a href="./week.html">This Week</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+      <a href="./index.html">Home</a>
+      <a href="./drills.html">Drills</a>
+      <a href="./tips.html">Tips</a>
+      <a href="./week.html">This Week</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" role="banner">
+    <div class="container">
+      <h1>Drills Library 📚</h1>
+      <p>12 drills across 6 categories — tap "See How" to expand full instructions.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-label="Drills library">
+      <div class="container">
+
+        <!-- FILTER BAR -->
+        <div class="filter-bar" role="group" aria-label="Filter drills by category">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="dribbling">⚽ Dribbling</button>
+          <button class="filter-pill" data-filter="passing">🎯 Passing</button>
+          <button class="filter-pill" data-filter="shooting">🥅 Shooting</button>
+          <button class="filter-pill" data-filter="defense">🛡️ Defense</button>
+          <button class="filter-pill" data-filter="teamwork">🤝 Teamwork</button>
+          <button class="filter-pill" data-filter="warmup">🔥 Warm-Up</button>
+        </div>
+
+        <!-- DRILL GRID -->
+        <div class="drill-grid" id="drill-grid">
+
+          <!-- ── DRILL 1: Cone Dribble Slalom ── -->
+          <article class="card drill-card" data-category="dribbling">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-dribbling">Dribbling</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  8 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Cone Dribble Slalom</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Weave through 6 cones using the inside and outside of your foot. Keep the ball close!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-1-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-1-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>6 cones</li><li>1 ball per player</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Set up 6 cones in a straight line, 2 feet apart.</li>
+                  <li>Start at one end with the ball at your feet.</li>
+                  <li>Dribble through the cones using the inside of your right foot, then the outside of your left foot.</li>
+                  <li>At the last cone, turn and dribble back through the other way.</li>
+                  <li>Try to go faster each round without losing control!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Keep your head up so you can see the cones ahead — don't stare at the ball the whole time!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Watch that your child is using both feet. Gently encourage them to try their weaker side — it's totally normal to feel wobbly at first!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 2: Sharks and Minnows ── -->
+          <article class="card drill-card" data-category="dribbling">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-dribbling">Dribbling</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  10 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Sharks and Minnows</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Dribble to safety while the "shark" tries to kick your ball out of the grid. Stay alive!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-2-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-2-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>Cones (grid boundary)</li><li>1 ball per minnow</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Mark out a 20×20 yard grid with cones.</li>
+                  <li>Choose 1–2 players to be "sharks" — they do NOT have a ball.</li>
+                  <li>All other players ("minnows") dribble freely inside the grid.</li>
+                  <li>Sharks try to kick minnows' balls out of the grid.</li>
+                  <li>If your ball goes out, you become a shark too. Last minnow standing wins!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Use your body to shield the ball — turn your back to the shark and protect it with your whole body!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Look for whether your child is keeping the ball close under pressure. Praise them when they use their body to shield — that's a real skill!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 3: Partner Passing Gates ── -->
+          <article class="card drill-card" data-category="passing">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-passing">Passing</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  10 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Partner Passing Gates</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Pass the ball through small cone gates with a partner. Score a point for each clean pass through!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-3-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-3-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>8 cones (4 gates)</li><li>1 ball per pair</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Set up 4 small gates (2 cones each, 1 yard wide) scattered around a 15×15 yard area.</li>
+                  <li>Work in pairs — one ball between two players.</li>
+                  <li>Pass the ball through any gate to your partner. Score 1 point per gate.</li>
+                  <li>Your partner must receive the ball cleanly before you can score.</li>
+                  <li>Try to score through all 4 gates in 60 seconds!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Plant your non-kicking foot next to the ball and use the inside of your foot — that's your most accurate passing surface!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Encourage your child to communicate with their partner — calling for the ball is a huge part of soccer at any level.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 4: 3v1 Rondo ── -->
+          <article class="card drill-card" data-category="passing">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-passing">Passing</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  12 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">3v1 Rondo</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 2 out of 3">⚽ ⚽ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Three players keep the ball away from one defender in a small square. Quick passes win!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-4-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-4-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>4 cones (square)</li><li>1 ball</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Mark a 8×8 yard square with cones.</li>
+                  <li>Three players stand outside the square; one player is the defender inside.</li>
+                  <li>The three outside players pass the ball to each other, keeping it away from the defender.</li>
+                  <li>If the defender wins the ball or it goes out, the player who lost it becomes the new defender.</li>
+                  <li>Rotate so everyone gets a turn defending!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Move after you pass! Don't stand still — find a new spot where your teammate can pass back to you."</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>This drill builds quick thinking under pressure. Ask your child what they do when the defender comes toward them — the answer is "pass quickly or move away!"</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 5: Shooting Lane Finish ── -->
+          <article class="card drill-card" data-category="shooting">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-shooting">Shooting</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  10 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Shooting Lane Finish</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Dribble through a lane of cones and take a clean shot on goal. Aim for the corners!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-5-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-5-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>4 cones (lane)</li><li>Goal or 2 cone goal</li><li>Multiple balls</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Set up a dribbling lane 15 yards from goal using 4 cones.</li>
+                  <li>Players line up at the start of the lane, each with a ball.</li>
+                  <li>Dribble through the lane, keeping the ball under control.</li>
+                  <li>When you exit the lane, shoot on goal using your laces (instep).</li>
+                  <li>Try to hit the corners — call out "left" or "right" before you shoot!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Lock your ankle tight, lean over the ball, and follow through toward the goal. That's the secret to a powerful, accurate shot!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Look for your child's body position over the ball when they shoot. If they're leaning back, the ball goes high — remind them to lean forward slightly.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 6: 2v1 to Goal ── -->
+          <article class="card drill-card" data-category="shooting">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-shooting">Shooting</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  12 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">2v1 to Goal</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 2 out of 3">⚽ ⚽ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Two attackers vs. one defender — use teamwork to create a shooting chance. Communicate!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-6-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-6-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>Goal or 2 cone goal</li><li>Multiple balls</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Two attackers start 20 yards from goal; one defender starts 10 yards from goal.</li>
+                  <li>Coach plays the ball to one attacker to start the play.</li>
+                  <li>Attackers work together to beat the defender and shoot on goal.</li>
+                  <li>Defender tries to win the ball or force a bad shot.</li>
+                  <li>Rotate roles after each attempt — everyone gets to attack and defend!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"When you have the ball, look at your teammate's run — pass when the defender commits to you, then your teammate is free!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>This drill teaches decision-making under pressure. Praise your child for passing at the right moment — that's smarter than always trying to dribble past.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 7: 1v1 Channel Defending ── -->
+          <article class="card drill-card" data-category="defense">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-defense">Defense</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  10 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">1v1 Channel Defending</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 2 out of 3">⚽ ⚽ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Defend a narrow channel — slow the attacker down and force them to one side. Stay patient!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-7-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-7-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>6 cones (channel)</li><li>1 ball per pair</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Mark a 5×20 yard channel with cones.</li>
+                  <li>Attacker starts at one end with the ball; defender starts 3 yards in front.</li>
+                  <li>Attacker tries to dribble to the other end of the channel.</li>
+                  <li>Defender tries to slow the attacker, force them sideways, and win the ball.</li>
+                  <li>Swap roles after each attempt.</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Stay on your toes, bend your knees, and don't dive in! Wait for the attacker to make a mistake — then pounce!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Good defending is about patience, not aggression. Praise your child when they slow the attacker down — that's the goal, even if they don't win the ball every time.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 8: Transition Defending Game ── -->
+          <article class="card drill-card" data-category="defense">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-defense">Defense</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  12 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Transition Defending Game</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 3 out of 3">⚽ ⚽ ⚽</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Win the ball and immediately switch to attack. React fast when your team loses possession!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-8-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-8-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>Cones (grid)</li><li>2 small goals</li><li>Multiple balls</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Set up a 20×20 yard grid with a small goal at each end.</li>
+                  <li>Play 3v3 — each team defends one goal and attacks the other.</li>
+                  <li>When a team wins the ball, they must take a shot within 5 seconds.</li>
+                  <li>The team that just lost the ball must sprint back to defend immediately.</li>
+                  <li>First team to 5 goals wins the round!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"The moment you lose the ball, sprint back! The fastest defender is the one who reacts first — not the fastest runner."</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Watch for your child's reaction when their team loses the ball. Encourage them to sprint back immediately — this habit is one of the most valuable in soccer.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 9: 4v4 Teamwork Challenge ── -->
+          <article class="card drill-card" data-category="teamwork">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-teamwork">Teamwork</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  15 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">4v4 Teamwork Challenge</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 2 out of 3">⚽ ⚽ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Score by dribbling through the opponent's end-zone gate. Every player must touch the ball first!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-9-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-9-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>Cones (field + end-zone gates)</li><li>Bibs/vests</li><li>1 ball</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Set up a 25×20 yard field with a 2-cone gate in each end-zone.</li>
+                  <li>Split into two teams of 4.</li>
+                  <li>To score, your team must complete a pass to every teammate before dribbling through the gate.</li>
+                  <li>If the other team wins the ball, the touch count resets.</li>
+                  <li>Celebrate every goal — it took real teamwork to score!</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Spread out! If you're all bunched together, there's no space to pass. Find an open spot and call for the ball!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>This drill is all about communication and spacing. Ask your child after practice: "Did you call for the ball today?" — it's a habit that makes a huge difference.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 10: Passing Circle ── -->
+          <article class="card drill-card" data-category="teamwork">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-teamwork">Teamwork</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  8 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Passing Circle</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Pass around the circle without stopping — see how many passes your team can string together!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-10-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-10-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>1 ball</li><li>5–8 players</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Players stand in a circle about 5 yards apart.</li>
+                  <li>Pass the ball around the circle — always two touches: one to control, one to pass.</li>
+                  <li>Count the passes out loud together as a team.</li>
+                  <li>If the ball goes out of the circle, the count resets to zero.</li>
+                  <li>Challenge: Can you beat your team record?</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Get your body ready before the ball arrives — open your hips toward the player you're going to pass to next!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>This drill builds rhythm and trust between teammates. Celebrate when your child's team beats their record — it shows they're improving together!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 11: Dynamic Warm-Up Circuit ── -->
+          <article class="card drill-card" data-category="warmup">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-warmup">Warm-Up</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  8 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Dynamic Warm-Up Circuit</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Get your body ready to play with high knees, butt kicks, side shuffles, and toe taps. Let's go!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-11-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-11-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>Cones (start/end markers)</li><li>Optional: 1 ball per player</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Mark a 15-yard line with cones at each end.</li>
+                  <li>High knees: Drive your knees up to your waist — go and back.</li>
+                  <li>Butt kicks: Kick your heels up to your backside — go and back.</li>
+                  <li>Side shuffles: Face sideways and shuffle — go right, come back left.</li>
+                  <li>Toe taps on ball: Alternate feet tapping the top of the ball for 20 seconds.</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"A good warm-up means your muscles are ready to sprint and change direction safely. Never skip it — even the pros warm up every single game!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>Warming up properly reduces injury risk. Encourage your child to take the warm-up seriously — it's not just running around, it's preparing their body for real effort.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRILL 12: Red Light Green Light Dribbling ── -->
+          <article class="card drill-card" data-category="warmup">
+            <div class="card-body">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+                <span class="badge badge-warmup">Warm-Up</span>
+                <span class="duration-badge">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  8 min
+                </span>
+              </div>
+              <h3 style="margin-bottom:0.4rem;">Red Light / Green Light</h3>
+              <div style="margin-bottom:0.75rem;">
+                <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+              </div>
+              <p style="color:#475569; font-size:0.95rem; margin-bottom:1rem;">
+                Dribble on "green light," stop the ball dead on "red light." React fast and keep control!
+              </p>
+              <button
+                class="btn btn-green btn-sm accordion-toggle"
+                aria-expanded="false"
+                aria-controls="drill-12-panel"
+              >
+                <span class="toggle-label">See How</span>
+                <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transition:transform 0.3s;"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <div class="accordion-panel" id="drill-12-panel" role="region">
+              <div class="accordion-inner">
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Equipment</p>
+                <ul class="equipment-list">
+                  <li>1 ball per player</li><li>Cones (boundary)</li>
+                </ul>
+                <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; margin-bottom:0.5rem;">Instructions</p>
+                <ol class="instruction-list">
+                  <li>Mark a 20×20 yard grid. Every player has a ball.</li>
+                  <li>Coach calls "green light" — everyone dribbles freely around the grid.</li>
+                  <li>Coach calls "red light" — everyone stops the ball immediately under their foot.</li>
+                  <li>Coach can also call "yellow light" — dribble in slow motion!</li>
+                  <li>Last player to stop on "red light" does 5 toe taps as a fun challenge.</li>
+                </ol>
+                <div class="callout callout-green">
+                  <p class="callout-title">⚽ Coach's Tip</p>
+                  <p>"Stop the ball with the bottom of your foot — that's called a 'sole stop' and it's one of the most useful moves in soccer!"</p>
+                </div>
+                <div class="callout callout-blue" style="margin-top:0.75rem;">
+                  <p class="callout-title">👨‍👩‍👧 Parent Note</p>
+                  <p>This drill builds ball familiarity and listening skills at the same time. Ask your child to show you a "sole stop" at home — it's a great skill to practice in the backyard!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /drill-grid -->
+
+        <!-- BOTTOM CTA -->
+        <div class="cta-banner" style="margin-top:3rem;">
+          <h2>Need a custom drill? 🎯</h2>
+          <p>Ask the Soccer Practice Coach to build a drill tailored to your team's needs.</p>
+          <a href="https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Ask the Coach →
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p style="font-size:1.5rem; margin-bottom:0.5rem;">⚽</p>
+      <p style="font-weight:700; color:#e2e8f0; margin-bottom:0.25rem;">YMCA Strikers — Youth Soccer</p>
+      <p style="margin-bottom:0.5rem;">2025–2026 Season &nbsp;|&nbsp; Ages 9–10</p>
+      <p>Drill content powered by the <a href="https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach" target="_blank" rel="noopener noreferrer">Soccer Practice Coach GPT</a></p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

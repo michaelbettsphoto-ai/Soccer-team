@@ -1,163 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YMCA Soccer Team</title>
-    <meta
-      name="description"
-      content="YMCA soccer team site with schedule, contact info, and plans for the first six practices."
-    />
-    <link rel="stylesheet" href="assets/css/theme-anime.css" />
-  </head>
-  <body>
-    <header class="hero" id="home">
-      <nav class="top-nav">
-        <a href="#home" class="brand">⚽ YMCA Strikers</a>
-        <div class="nav-links">
-          <a href="#team">Team Info</a>
-          <a href="#schedule">Schedule</a>
-          <a href="#practices">Practice Plans</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-      <div class="hero-content">
-        <p class="tag">SEASON QUEST 2026</p>
-        <h1>Train Hard. Play Smart. Have Fun.</h1>
-        <p>
-          Welcome to our team website! Here you'll find updates and the first six
-          practice plans designed for player development and confidence.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YMCA Strikers ⚽ Youth Soccer</title>
+  <meta name="description" content="Practice drills, skill tips, and weekly focus for YMCA youth soccer players ages 9–10." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="./index.html" class="nav-logo">⚽ YMCA Strikers</a>
+      <ul class="nav-links" role="list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./drills.html">Drills</a></li>
+        <li><a href="./tips.html">Tips</a></li>
+        <li><a href="./week.html">This Week</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+      <a href="./index.html">Home</a>
+      <a href="./drills.html">Drills</a>
+      <a href="./tips.html">Tips</a>
+      <a href="./week.html">This Week</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="pitch-bg hero" aria-label="Welcome banner">
+      <div class="container">
+        <p class="section-label" style="color:#86efac; margin-bottom:0.5rem;">2025–2026 Season</p>
+        <h1 class="fade-in">Let's Train! 🏆</h1>
+        <p class="fade-in" style="animation-delay:0.1s; max-width:560px; margin:1rem auto 0;">
+          Drills and tips for young soccer stars — ages 9 &amp; 10.
+          Powered by the Soccer Practice Coach.
         </p>
-        <a class="cta" href="#practices">View Practice Plans</a>
+        <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;" class="fade-in">
+          <a href="./drills.html" class="btn btn-green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Explore Drills
+          </a>
+          <a href="./week.html" class="btn btn-outline">This Week's Focus →</a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="team" class="panel">
-        <h2>Team Info</h2>
-        <p>
-          We are a YMCA youth soccer team focused on fundamentals, teamwork, and
-          sportsmanship. Every practice includes technical skill work and game
-          play.
-        </p>
-        <div class="callout coach-tip">
-          <h3>Coach Tip</h3>
-          <p>
-            Celebrate effort first. Players improve faster when they feel safe to
-            try, fail, and try again.
-          </p>
+    <!-- FEATURED DRILL OF THE WEEK -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <p class="section-label">Featured This Week</p>
+        <h2 id="featured-heading" style="margin-bottom:1.5rem;">Drill of the Week</h2>
+        <div class="featured-drill card">
+          <div class="featured-drill-img" aria-hidden="true">⚽</div>
+          <div class="featured-drill-body">
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.75rem;">
+              <span class="badge badge-dribbling">Dribbling</span>
+              <span class="badge" style="background:#dcfce7; color:#15803d;">Beginner</span>
+            </div>
+            <h3 style="font-size:1.6rem; margin-bottom:0.5rem;">Cone Dribble Slalom</h3>
+            <p style="color:#475569; margin-bottom:1rem;">
+              Weave through a line of cones using the inside and outside of your foot.
+              Great for close control and quick changes of direction!
+            </p>
+            <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:1.25rem;">
+              <span class="duration-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                8 min
+              </span>
+              <span class="difficulty" aria-label="Difficulty: 1 out of 3">⚽ ○ ○</span>
+            </div>
+            <a href="./week.html" class="btn btn-green btn-sm">View This Week's Drill →</a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="schedule" class="panel">
-        <h2>Schedule</h2>
-        <ul class="schedule-list">
-          <li><strong>Practice:</strong> Tuesdays & Thursdays, 5:30 PM - 6:35 PM</li>
-          <li><strong>Location:</strong> YMCA North Field</li>
-          <li><strong>Game Day:</strong> Saturdays (times posted weekly)</li>
-          <li><strong>Bring:</strong> Ball, cleats, shin guards, water bottle</li>
-        </ul>
-      </section>
+    <!-- QUICK ACCESS -->
+    <section class="section" style="background:var(--white); padding-top:2rem; padding-bottom:3rem;" aria-labelledby="quick-heading">
+      <div class="container">
+        <p class="section-label text-center">Jump Right In</p>
+        <h2 id="quick-heading" class="text-center" style="margin-bottom:2rem;">What do you want to do?</h2>
+        <div class="grid-3 stagger">
 
-      <section id="practices" class="panel">
-        <h2>Practice Plans (First 6)</h2>
-        <p class="section-intro">
-          Each practice follows a consistent format: warm-up, two skill activities,
-          small-sided game, scrimmage/cooldown, and coaching points.
-        </p>
+          <a href="./drills.html" class="quick-card fade-in" aria-label="Go to Drills Library">
+            <div class="icon-wrap" style="background:#dcfce7;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Drills Library</h3>
+            <p>Browse 12 drills across 6 categories. Filter by skill type and expand any drill for full instructions.</p>
+          </a>
 
-        <div class="practice-grid">
-          <article class="practice-card">
-            <span class="badge">Practice 1</span>
-            <h3>Ball Familiarity & Fun</h3>
-            <p><strong>Objective:</strong> Build comfort on the ball and introduce team expectations.</p>
-            <ul>
-              <li>Warm-up: Toe taps + dribble freeze game</li>
-              <li>Activity 1: Red light/green light dribbling</li>
-              <li>Activity 2: Dribble through gates</li>
-              <li>Small-sided game: 3v3 free play</li>
-            </ul>
-          </article>
+          <a href="./tips.html" class="quick-card fade-in" aria-label="Go to Skill Tips">
+            <div class="icon-wrap" style="background:#e0f2fe;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>Skill Tips</h3>
+            <p>Quick, kid-friendly tips for dribbling, passing, shooting, and defending — written just for you!</p>
+          </a>
 
-          <article class="practice-card">
-            <span class="badge">Practice 2</span>
-            <h3>Dribbling Under Control</h3>
-            <p><strong>Objective:</strong> Keep close control while changing speed and direction.</p>
-            <ul>
-              <li>Warm-up: Touches with both feet</li>
-              <li>Activity 1: Cone slalom races</li>
-              <li>Activity 2: Sharks and minnows</li>
-              <li>Small-sided game: Dribble end-zone game</li>
-            </ul>
-          </article>
+          <a href="./week.html" class="quick-card fade-in" aria-label="Go to This Week's Focus">
+            <div class="icon-wrap" style="background:#fef9c3;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#854d0e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>This Week's Focus</h3>
+            <p>See the theme, featured drills, and coach's message for the current week of practice.</p>
+          </a>
 
-          <article class="practice-card">
-            <span class="badge">Practice 3</span>
-            <h3>Passing & Receiving Basics</h3>
-            <p><strong>Objective:</strong> Introduce accurate short passing and first touch.</p>
-            <ul>
-              <li>Warm-up: Partner one-touch passing</li>
-              <li>Activity 1: Passing through gates</li>
-              <li>Activity 2: 3v1 rondo</li>
-              <li>Small-sided game: 4-goal passing game</li>
-            </ul>
-          </article>
-
-          <article class="practice-card">
-            <span class="badge">Practice 4</span>
-            <h3>Shooting Technique</h3>
-            <p><strong>Objective:</strong> Improve confidence and mechanics in finishing.</p>
-            <ul>
-              <li>Warm-up: Passing to shot progression</li>
-              <li>Activity 1: Finishing from dribble lane</li>
-              <li>Activity 2: 2v1 to goal</li>
-              <li>Small-sided game: Bonus points for shot on target</li>
-            </ul>
-          </article>
-
-          <article class="practice-card">
-            <span class="badge">Practice 5</span>
-            <h3>Defending Fundamentals</h3>
-            <p><strong>Objective:</strong> Teach pressure, patience, and angle of approach.</p>
-            <ul>
-              <li>Warm-up: Shadow jockey footwork</li>
-              <li>Activity 1: 1v1 channel defending</li>
-              <li>Activity 2: Transition win-the-ball game</li>
-              <li>Small-sided game: Defend then counter</li>
-            </ul>
-          </article>
-
-          <article class="practice-card">
-            <span class="badge">Practice 6</span>
-            <h3>Game Application Day</h3>
-            <p><strong>Objective:</strong> Combine dribbling, passing, shooting, and defending in live play.</p>
-            <ul>
-              <li>Warm-up: Team passing circuit</li>
-              <li>Activity 1: Conditioned 3v3</li>
-              <li>Activity 2: 4v4 with touch limits</li>
-              <li>Small-sided game: Final scrimmage festival</li>
-            </ul>
-          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="callout parent-recap">
-          <h3>Parent Recap</h3>
-          <p>
-            Our first six practices focus on fundamentals and confidence. Ask your
-            player to show one move and one pass they learned after each session.
-          </p>
+    <!-- GENERATE DRILLS CTA BANNER -->
+    <section class="section" aria-label="Generate more drills">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Want more drills? 🚀</h2>
+          <p>The Soccer Practice Coach GPT can create custom drills for your team — just ask!</p>
+          <a href="https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Ask the Soccer Practice Coach →
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="panel">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:coach@ymca-soccer.example">coach@ymca-soccer.example</a></p>
-        <p>Team Chat: Shared by coach during week 1</p>
-      </section>
-    </main>
+  </main>
 
-    <footer>
-      <p>© 2026 YMCA Strikers • Built for GitHub Pages</p>
-    </footer>
-  </body>
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p style="font-size:1.5rem; margin-bottom:0.5rem;">⚽</p>
+      <p style="font-weight:700; color:#e2e8f0; margin-bottom:0.25rem;">YMCA Strikers — Youth Soccer</p>
+      <p style="margin-bottom:0.5rem;">2025–2026 Season &nbsp;|&nbsp; Ages 9–10</p>
+      <p>Drill content powered by the <a href="https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach" target="_blank" rel="noopener noreferrer">Soccer Practice Coach GPT</a></p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
 </html>

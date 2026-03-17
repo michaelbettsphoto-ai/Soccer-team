@@ -1,182 +1,73 @@
-# YMCA Soccer Team Website Plan
+# ⚽ YMCA Strikers — Youth Soccer Website
 
-This repository will be used to build and host a team website on **GitHub Pages**. The site will include team details and complete plans for the first six practices.
+A static, multi-page youth soccer website for a YMCA team of 9–10 year olds. The site hosts practice drills, skill tips, and weekly focus content generated with the [Soccer Practice Coach GPT](https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach).
 
-## 1) Platform decision (hosting)
+## 🔗 Live Site
 
-We will host the website using **GitHub Pages** ("GitHub website").
+> **[https://michaelbettsphoto-ai.github.io/Soccer-team/](https://michaelbettsphoto-ai.github.io/Soccer-team/)**
 
-### GitHub Pages setup checklist
+## 📄 Pages
 
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, select:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` (or your default branch), folder `/root`
-4. Save, then wait for deployment.
-5. Use the published URL (for example: `https://<org-or-user>.github.io/<repo-name>/`).
+| Page | Description |
+|------|-------------|
+| `index.html` | Home page — hero, featured drill of the week, quick-access cards, CTA banner |
+| `drills.html` | Drills Library — 12 drills with category filter and expandable accordion panels |
+| `tips.html` | Skill Tips — 16 tips across 4 categories with tabbed navigation |
+| `week.html` | This Week's Focus — weekly theme, featured drills, coach's message, and parent prep note |
 
-> If you later use a static-site generator (Jekyll/Hugo/etc.), keep deployment on Pages and adjust build settings as needed.
+## 🛠️ Tech Stack
 
----
+- **Pure HTML5 / CSS3 / Vanilla JavaScript** — no build tools, no frameworks
+- **Tailwind CSS** via CDN
+- **Google Fonts** (Nunito + Inter) via CDN
+- Deployable directly from the repo root to **GitHub Pages**
 
-## 2) Website style direction: anime-inspired
+## 🚀 Deploy to GitHub Pages
 
-We will use a clean, anime-inspired design style that feels fun for players while still readable for parents and coaches.
+1. Go to **Settings → Pages** in this repository
+2. Set **Source** to `Deploy from a branch`
+3. Select branch `main` and folder `/ (root)`
+4. Save — your site will be live at `https://michaelbettsphoto-ai.github.io/Soccer-team/`
 
-### Visual style goals
+## 📁 File Structure
 
-- Bright, energetic color palette (sky blue, grass green, sunset orange, white)
-- Manga/comic section headers with subtle outlines
-- Rounded cards with soft shadows for drills and schedules
-- Action accents (speed-line dividers, star bursts, diagonal separators)
-- Friendly typography with high readability
+```
+/
+├── index.html       ← Home page
+├── drills.html      ← Full drills library (12 drills, filter + accordion)
+├── tips.html        ← Skill tips (16 tips, 4 categories, tabbed)
+├── week.html        ← This week's focus
+├── style.css        ← Custom styles, animations, pitch texture
+├── app.js           ← Nav toggle, drill filter, accordion, tip tabs
+└── assets/
+    └── css/
+        └── theme-anime.css  ← Legacy anime theme (preserved)
+```
 
-### UI component style guide
+## ✨ Features
 
-- **Navigation bar:** bold title, high-contrast links, sticky top
-- **Practice cards:** large practice number badge + objective + key skills
-- **Buttons:** rounded-pill buttons with hover glow
-- **Callout boxes:** “Coach Tip” and “Parent Recap” themed blocks
-- **Print mode:** remove decorative graphics and keep text-first layout for field use
+- **Responsive mobile-first layout** — single column on mobile, grid on tablet/desktop
+- **Category filter** on drills page — real-time JS filtering, no page reload
+- **Expandable accordion** on every drill card — full instructions, Coach's Tip, Parent Note
+- **Tabbed navigation** on tips page — switch between skill categories instantly
+- **Collapsible Parent Notes** on every tip card
+- **Sticky navigation** with hamburger menu on mobile
+- **Active nav link** highlighting based on current page
+- **Smooth scroll** behavior
+- **Accessible** — semantic HTML, `aria-expanded`, `aria-controls`, keyboard navigation
+- **Soccer Practice Coach GPT** integration — "Generate More Drills" CTA on every page
 
-### Accessibility guardrails
+## 🎨 Design
 
-- Maintain WCAG-friendly color contrast for body text
-- Never rely on color alone to communicate meaning
-- Keep minimum font sizes readable on phones
-- Support reduced motion (limit animated effects)
+- **Colors:** Grass green `#22c55e`, Sky blue `#38bdf8`, Dark slate `#1e293b`
+- **Fonts:** Nunito (headings) + Inter (body) via Google Fonts
+- **Background:** CSS-only diagonal pitch line pattern
+- **Cards:** Rounded corners, drop shadows, hover lift effect
 
----
+## 📝 Content
 
-## 3) How to use Soccer Practice Coach GPT for content
-
-Use this GPT for each practice draft:
-- https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach
-
-### Prompt input to provide each time
-
-- Age group + skill level
-- Expected player count
-- Practice length
-- Available equipment
-- Main objective for that session
-
-### Output format to request (copy/paste-ready for the website)
-
-1. Warm-up (10 min)
-2. Activity 1 (15 min)
-3. Activity 2 (15 min)
-4. Small-sided game (15 min)
-5. Scrimmage + cooldown (10 min)
-6. Coaching points + at-home challenge
+All drill and tip content is written in the voice of the [Soccer Practice Coach GPT](https://chatgpt.com/g/g-69b8aa747d4c8191b0a3df88eeb19f5b-soccer-practice-coach). Every drill includes a Coach's Tip and Parent Note. Every tip includes a collapsible Parent Note.
 
 ---
 
-## 4) Site structure (recommended pages)
-
-- Home
-- Team Info
-- Schedule
-- Practice Plans
-  - Practice 1
-  - Practice 2
-  - Practice 3
-  - Practice 4
-  - Practice 5
-  - Practice 6
-- Contact
-
----
-
-## 5) Build plan
-
-### Phase A — Content planning
-
-1. Create one template for all practice pages:
-   - Objective
-   - Time blocks
-   - Drill setup
-   - Coaching points
-   - Variations (easier/harder)
-   - Parent recap
-2. Generate practices 1–6 with Soccer Practice Coach GPT.
-3. Review and personalize for your team.
-
-### Phase B — Website implementation
-
-1. Build navigation and core pages.
-2. Add a Practice Plans hub page.
-3. Publish Practice 1–6 using the same template.
-4. Apply anime-inspired design tokens (colors, cards, badges, callouts).
-5. Add print-friendly formatting (for field use).
-
-### Phase C — Publish + maintain
-
-1. Deploy to GitHub Pages.
-2. Share link with coaches/parents.
-3. Weekly workflow:
-   - Draft next practice with GPT
-   - Review/edit
-   - Publish update
-
----
-
-## 6) First six practice roadmap
-
-### Practice 1 — Ball familiarity and fun
-- Objective: Introduce players, team expectations, and ball confidence.
-- Key skills: Toe taps, dribble/stop, changing direction.
-- Game ideas: Red light/green light, dribble gates.
-- Coaching emphasis: Lots of touches, positive energy.
-
-### Practice 2 — Dribbling control
-- Objective: Improve close control while moving.
-- Key skills: Inside/outside touches, turns, shielding intro.
-- Game ideas: Sharks and minnows, cone slalom races.
-- Coaching emphasis: Keep ball close, head up, speed changes.
-
-### Practice 3 — Passing and receiving
-- Objective: Teach accurate short passing and first touch.
-- Key skills: Push pass, receiving with inside of foot.
-- Game ideas: Partner gates, 3v1 keep-away.
-- Coaching emphasis: Plant foot, pass weight, first touch to space.
-
-### Practice 4 — Shooting fundamentals
-- Objective: Improve confidence and mechanics in shooting.
-- Key skills: Laces technique, body position, follow-through.
-- Game ideas: Shooting lanes, 2v1 to goal.
-- Coaching emphasis: Eyes on ball, locked ankle, aim corners.
-
-### Practice 5 — Defending basics
-- Objective: Introduce pressure, body shape, and timing.
-- Key skills: Angle of approach, jockeying, poke tackle timing.
-- Game ideas: 1v1 channels, transition defending game.
-- Coaching emphasis: Patience, stay goal-side, controlled pressure.
-
-### Practice 6 — Game application day
-- Objective: Combine all core skills in match-like play.
-- Key skills: Decision-making, spacing, communication.
-- Game ideas: Conditioned 3v3/4v4, final scrimmage.
-- Coaching emphasis: Teamwork, effort, smart choices.
-
----
-
-## 7) Content checklist per practice page
-
-- [ ] Generate draft from Soccer Practice Coach GPT
-- [ ] Verify fit for field size and attendance
-- [ ] Add one easier and one harder variation
-- [ ] Add team-specific coaching notes
-- [ ] Add parent recap summary
-- [ ] Publish on site
-
----
-
-## 8) Immediate next repo tasks
-
-- Add `docs/practices/practice-01.md` through `practice-06.md`
-- Add `docs/practices/template.md` for future sessions
-- Add homepage + navigation files for GitHub Pages
-- Add anime theme CSS (`assets/css/theme-anime.css`)
-- Add print stylesheet for coaches
+*Built for GitHub Pages — no build tools required.*
